@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/060c7ac410.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">
+            <img src="Images/Logo1.png" alt="Logo" class="Icon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <div class="Home_main">
+        <div class="prev_pic">
+            <img src="Images/Home-Pic.png" alt="Home_Pic" class="pic1">
+        </div>
+        <div class="name">
+            <h3 class="des1">UI/UX Designer</h3>
+            <h1 class="Fullname"><span class="firstname">Zahoor</span> Mohammed.</h1>
+            <h2 class="studied">Computer Science Engineer (Artificial Intelligence and Machine Learning)</h2>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="abtslide">
+        <div class="abtimage">
+            <img src="Images/personal1.jpg" alt="Personal Picture" class="abtimg">
+        </div>
+        <div class="abtheader">
+            About
+        </div>
+        <div class="abtinfo">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived
+                not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Desiging Web/App Interfaces</li>
+                <li><span>Web Development</span><br>Web app Development</li>
+                <li><span>App Development</span><br>Building Android/IOS apps</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>No Experience</span><br>Pursue Engineering.</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>Engineering(2021-2024)</span><br>AAR MAHAVEER ENGINEEING COLLEGE<br>70%</li>
+                <li><span>INTERMEDIATE(2018-2020)</span><br>NARAYANA JUNIOR COLLEGE<br>85%</li>
+                <li><span>SCHOOL(2016)</span><br>Building Android/IOS apps<br>77%</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code fa-beat-fade"></i>
+                    <h2>Web Development </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop fa-beat-fade"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store fa-beat-fade"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT SLIDE -->
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="subtitle">Contact Me</h2>
+                <p><i class="fa-solid fa-paper-plane" style="color: #ff0000;"></i> Contact@example.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone" style="color: #ff0000;"></i> 9381040187</p>
+                <div class="social-icons">
+                    <a href="http://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="http://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="http://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="http://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <br><a href="#" type="button" class="cvbtn">Download CV</a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" id="" required>
+                    <input type="text" name="email" id="" placeholder="Your Email" required>
+                    <textarea name="Message" id="" placeholder="Your Message" cols="30" rows="10"></textarea> 
+                </form>
+                <br><a href="#" type="button" class="cvbtn">Submit</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>

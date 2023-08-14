@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&family=Roboto+Slab&family=Source+Code+Pro:wght@300;500&family=Ysabeau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Merriweather+Sans:ital,wght@1,300&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    
+}
+body{
+    background-color: black;
+}
+.Home_main{
+    margin-top: 100px;
+    border-style: solid;
+    border-color: #E8F6EF;
+    /* background-color: #E8F6EF; */
+    border-radius: 3px;
+    margin-right: 40px;
+    margin-left: 40px;
+    height: 500px;
+    position: relative;
+
+}
+.prev_pic{
+    position:absolute;
+    right:0px;
+}
+.pic1{
+    height: 500px;
+    width: 850px;
+    padding-left: 735px;
+    opacity: 70%;
+}
+.Name{
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    padding: 100px;
+}
+.icon{
+    padding: 5px;
+
+}
+.icon img{
+    height: 58px;
+    width: 195px;
+}
+.Fullname{
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+}
+.firstname{
+    color: red;
+}
+nav ul li{
+    display: inline;
+    list-style: normal;
+    margin: 50px;
+}
+.container{
+    position: relative;
+}
+nav{
+    position:absolute;
+    right: 0px;
+    top: 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.studied{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.des1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+.abtslide{
+    margin: 50px;
+    position: relative;
+    background-color: #454545;
+    border-radius: 15px;
+    /* border-style: solid;
+    border-color: red; */
+}
+.abtheader{
+    color:white;
+    position: absolute;
+    right: 375px;
+    top: 50px;
+    font-size:3rem;
+    font-weight: 800;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 90%;
+}
+.abtimg{
+    margin: 50px;
+    padding-left: 100px;
+    height: 600px;
+    border-radius: 15px;
+    opacity: 70%;
+}
+.abtinfo{
+    /* border-style: solid;
+    border-color: red; */
+    width: 650px;
+    height: auto;
+    color: white;
+    position: absolute;
+    top:  120px;
+    right: 100px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 80%;
+}
+.tab-titles{
+    /* border-style: solid;
+    border-color: red; */
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 390px;
+    top: 300px;
+}
+.tab-links{
+    margin: 20px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 050%;
+}
+.tab-contents{
+    color: white;
+    /* border-style: solid;
+    border-color: red; */
+    position: absolute;
+    right:400px;
+    top: 370px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px;
+}
+.tab-contents ul li span{
+    color: red;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    /* font-weight: 700; */
+    opacity: 70%;
+}
+.tab-contents ul li {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.sub-title{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Righteous', cursive;
+    padding-left: 40%;
+    letter-spacing: 3px;
+}
+.service-list{
+    color: white;
+    display: grid;
+    margin: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,5fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    font-family: 'Roboto Slab', serif;
+}
+.service-list h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 70%;
+}
+.service-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 12px;
+    font-weight: 200;
+    border-right: 10px;
+    border-radius: 5px;
+    transition: background 0.7s, transform 0.5s;
+}
+.service-list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 30px;
+    display: inline-block;
+}
+.service-list i{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.service-list div:hover{
+    background: red;
+    transform: translateY(-10px);
+}
+.row{
+}
+.contact-left{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    margin: 75px;
+    line-height: 50px;
+    font-size: 1.3rem;
+}
+.contact-right{
+    position: absolute;
+    right: 100px;
+    top: 0px;
+}
+.subtitle{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Righteous', cursive;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+}
+.contact-left i{
+    margin-right: 15px;
+}
+.social-icons i{
+    margin: 30px;
+    color: #adadad;
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+.social-icons i:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+.cvbtn{
+    display: block;
+    width: 120px;
+    border: 1px solid red;
+    margin-left: 65px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.5s;
+    font-family: 'Roboto Slab', serif;
+}
+.cvbtn:hover{
+    background-color: red;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 12px;
+}
